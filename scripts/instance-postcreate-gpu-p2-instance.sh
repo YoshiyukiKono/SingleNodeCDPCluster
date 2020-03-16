@@ -7,8 +7,11 @@ date
 
 CM_USERNAME=admin
 CM_PASSWORD=admin
-CLUSTER_NAME=
-DEPLOYMENT_HOST_PORT=
+CLUSTER_NAME=SingleNodeCluster
+
+DEPLOYMENT_HOST=`hostname -f`
+DEPLOYMENT_PORT=7180
+DEPLOYMENT_HOST_PORT="${DEPLOYMENT_HOST}:${DEPLOYMENT_PORT}"
 
 yum -y install epel-release
 yum -y install jq
